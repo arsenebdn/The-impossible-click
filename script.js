@@ -149,7 +149,7 @@ function setupLevel(lv) {
       const btn = document.createElement('button');
       btn.classList.add('game-btn');
       btn.style.position = 'absolute';
-      btn.style.opacity = '50'; // caché par défaut
+      btn.style.opacity = '0'; // caché par défaut
       btn.style.cursor = 'none'; // pas de changement curseur au hover
       btn.textContent = '';
       gameArea.style.cursor = 'none'; // curseur invisible
@@ -193,7 +193,7 @@ function setupLevel(lv) {
       const btn = document.createElement('button');
       btn.classList.add('game-btn');
       btn.style.position = 'absolute';
-      btn.style.opacity = '50'; // invisible mais clicable
+      btn.style.opacity = '0'; // invisible mais clicable
       btn.style.cursor = 'grab';
       btn.textContent = '';
       moveRandom(btn);
