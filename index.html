@@ -1,55 +1,13 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>T'as réussi à cliquer ?</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- À inclure dans ton index.html -->
-<link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
-
-</head>
-<body>
-  <!-- Page d'accueil -->
-  <div id="home-screen">
-    <h1>T'as réussi à cliquer ?</h1>
-    <p class="rules">
-      Tu as <strong>5 secondes</strong> pour cliquer sur le <strong>bon bouton</strong>.<br>
-      Si tu rates ou cliques mal, tu <strong>recommences au niveau 1</strong>.<br>
-      Chaque niveau est <em>plus injuste que le précédent</em>.<br>
-      Bonne chance.
-    </p>
-    <button id="start-btn">JOUER</button>
-  </div>
-
-  <!-- Zone de jeu -->
-  <div id="game-screen" class="hidden">
-    <div id="hud">
-      <span id="level-display">Niveau 1</span>
-      <span id="timer">5</span>
-    </div>
-    <div id="game-area"></div>
-  </div>
-
-  <!-- Fin -->
-  <div id="win-screen" class="hidden">
-    <h2>👏 Tu as réussi à cliquer.</h2>
-    <p>Tu es officiellement... une machine.</p>
-    <button onclick="location.reload()">Rejouer</button>
-  </div>
-
-  <!-- Échec -->
-  <div id="fail-screen" class="hidden">
-    <h2>💀 Temps écoulé ou erreur.</h2>
-    <p>Tu dois tout recommencer.</p>
-    <button onclick="location.reload()">Recommencer</button>
-  </div>
-
-  <script src="script.js"></script>
-  <script src="level6.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/1.0.0/chess.min.js"></script>
-<script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
-
-
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
