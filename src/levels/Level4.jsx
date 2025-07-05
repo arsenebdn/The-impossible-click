@@ -45,7 +45,9 @@ export default function Level4({ onNext }) {
           cursor: "none",
         }}
         onClick={onNext}
-      />
+      >
+        Clique-moi
+      </button>
     </div>
   );
 }

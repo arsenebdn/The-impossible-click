@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export default function Level5({ onNext }) {
+export default function Level6({ onNext }) {
   const btnRef = useRef();
   const areaRef = useRef();
   const [pos, setPos] = useState({ top: "50%", left: "50%" });
@@ -55,9 +55,7 @@ export default function Level5({ onNext }) {
           e.stopPropagation();
           onNext();
         }}
-      >
-        Clique-moi
-      </button>
+      />
     </div>
   );
 }
